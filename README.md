@@ -28,28 +28,26 @@ What is included:
 ## Build Docker
 
 The shared Docker layers live inside this repo now.
-Use the local control script from the competition folder:
+Use the local control script from the repository root:
 
 ```bash
-cd /home/uzer/workspace/aliengo_competition
-bash docker/ctl.sh build
+./docker/ctl.sh build
 ```
 
 Or, to build and start in one step:
 
 ```bash
-cd /home/uzer/workspace/aliengo_competition
-bash docker/ctl.sh up
+./docker/ctl.sh up
 ```
 
 ## Quick Commands
 
 ```bash
-bash docker/ctl.sh build
-bash docker/ctl.sh up
-bash docker/ctl.sh enter
-bash docker/ctl.sh down
-bash docker/ctl.sh logs
+./docker/ctl.sh build
+./docker/ctl.sh up
+./docker/ctl.sh enter
+./docker/ctl.sh down
+./docker/ctl.sh logs
 python scripts/train.py --task aliengo_flat --headless
 python scripts/play.py --task aliengo_flat --headless --vx 0.5 --vy 0.0 --vw 0.0 --pitch 0.0
 python scripts/controller.py --task aliengo_flat --mode sim --headless
@@ -59,8 +57,7 @@ python scripts/plot_training.py
 ## Run Container
 
 ```bash
-cd /home/uzer/workspace/aliengo_competition
-bash docker/ctl.sh enter
+./docker/ctl.sh enter
 ```
 
 ## Train
